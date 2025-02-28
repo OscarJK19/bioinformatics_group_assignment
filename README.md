@@ -9,15 +9,17 @@ This project models the interactions between three species: plants, hares, and l
 
 The three-species model is defined by a system of ordinary differential equations (ODEs), which describe the interactions among plants (prey), hares (herbivores), and lynx (predators). The equations account for:
 
-- Plant growth: Limited by a logistic growth term.
+- **\(Plant growth\)**: Limited by a logistic growth term.
 
-- Hare consumption: Hares consume plants at a rate dependent on plant density.
+- **\(Hare consumption\)**: Hares consume plants at a rate dependent on plant density.
 
-- Predation by lynx: Lynx prey on hares with an efficiency factor.
+- **\(Predation by lynx\)**: Lynx prey on hares with an efficiency factor.
 
-- Natural death rates: Both hares and lynx have mortality terms.
+- **\(Natural death rates\)**: Both hares and lynx have mortality terms.
 
 The differential equations used in the model are:
+
+
 <img width="502" alt="Screenshot 2025-02-28 at 13 21 43" src="https://github.com/user-attachments/assets/d5bee10c-68f3-41bc-a209-1ff372506303" />
 
 ## Parameters
