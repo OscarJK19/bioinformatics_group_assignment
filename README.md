@@ -27,9 +27,9 @@ The differential equations used in the model are:
 
 
 ## Parameters
-- **\(P\)**: Population of plants
-- **\(H\)**: Population of hares
-- **\(L\)**: Population of lynx
+- **\(X\)**: Population of plants
+- **\(Y\)**: Population of hares
+- **\(Z\)**: Population of lynx
 - **\(a_1\)**: Growth rate of plants
 - **\(b_1\)**: Consumption rate of hares on plants
 - **\(a_2\)**: Predation rate of lynx on hares
@@ -41,8 +41,10 @@ The differential equations used in the model are:
 
 To run the code, you need:
 
-MATLAB installed on your system
+- MATLAB installed on your system
 
-The ode45 function (part of MATLAB’s built-in ODE solvers)
+- The ode45 function (part of MATLAB’s built-in ODE solvers)
 
+## Brief Analysis
+In the first scenario, plant, hare, and lynx populations cycle periodically, with hares and lynx following plant abundance. In the second scenario, lynx die out due to high mortality, leading to hare population growth and plant population decline before stabilizing. In the third scenario, one small initial difference causes unpredictable, irregular fluctuations, showing sensitive dependence on conditions.
 
