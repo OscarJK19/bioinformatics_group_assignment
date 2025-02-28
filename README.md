@@ -1,23 +1,24 @@
 # Bioinformatics_group_assignment
 *Dynamic Modelling Assignment from Bioinformatics Skills Course (SKI2102).*
 
-# Bioinformatics_Group_Assignment
+## Overview
 
-*Dynamic Modelling Assignment from Bioinformatics Skills Course (SKI2102).*
+This project models the interactions between three species: plants, hares, and lynx, using a system of differential equations. The model explores different ecological scenarios, including stable oscillations, predator extinction, and chaotic behavior. By solving these equations numerically, the code provides insights into how species populations evolve over time under varying conditions.
 
-## Model Equations
+## Model Description
 
-\[
-\frac{dP}{dt} = P(1 - P) - \frac{a_1 P}{1 + b_1 P} H
-\]
+The three-species model is defined by a system of ordinary differential equations (ODEs), which describe the interactions among plants (prey), hares (herbivores), and lynx (predators). The equations account for:
 
-\[
-\frac{dH}{dt} = \frac{a_1 P}{1 + b_1 P} H - d_1 H - \frac{a_2 H}{1 + b_2 H} L
-\]
+- Plant growth: Limited by a logistic growth term.
 
-\[
-\frac{dL}{dt} = \frac{a_2 H}{1 + b_2 H} L - d_2 L
-\]
+- Hare consumption: Hares consume plants at a rate dependent on plant density.
+
+- Predation by lynx: Lynx prey on hares with an efficiency factor.
+
+- Natural death rates: Both hares and lynx have mortality terms.
+
+The differential equations used in the model are:
+<img width="502" alt="Screenshot 2025-02-28 at 13 21 43" src="https://github.com/user-attachments/assets/d5bee10c-68f3-41bc-a209-1ff372506303" />
 
 ## Parameters
 - **\(P\)**: Population of plants
@@ -30,7 +31,12 @@
 - **\(d_1\)**: Natural death rate of hares
 - **\(d_2\)**: Natural death rate of lynx
 
-## Notes
-To properly view these equations, render this Markdown file in a system that supports **LaTeX** (such as Jupyter Notebook or a documentation site that allows MathJax).
+## Requirements
+
+To run the code, you need:
+
+MATLAB installed on your system
+
+The ode45 function (part of MATLAB’s built-in ODE solvers)
 
 
